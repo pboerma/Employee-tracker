@@ -1,0 +1,19 @@
+{
+  "name": "employeetracker",
+  "version": "1.0.0",
+  "description": "Application to view add and update employee roles",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pboerma/Employee-tracker.git"
+  },
+  "author": "Pieter Boerma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pboerma/Employee-tracker/issues"
+  },
+  "homepage": "https://github.com/pboerma/Employee-tracker#readme"
+}
