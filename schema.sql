@@ -1,4 +1,5 @@
---CREATING OUR DATABASE --
+-- CREATING OUR DATABASE --
+
 DROP DATABASE IF EXISTS employee_trackerDB;
 
 CREATE DATABASE employee_trackerDB;
@@ -6,12 +7,14 @@ CREATE DATABASE employee_trackerDB;
 USE employee_trackerDB;
 
 -- DEPARTMENT TABLE ----
+
 CREATE TABLE department (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(30)
  
 );
 -- DEPARTMENT TABLE ----
+
 CREATE TABLE role (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30),
@@ -20,6 +23,7 @@ CREATE TABLE role (
   FOREIGN KEY (department_id) REFERENCES department(id)
 );
 -- EMPLOYEE ROLE TABLE ----
+
 CREATE TABLE employee (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30),
@@ -32,6 +36,7 @@ CREATE TABLE employee (
 );
 
 -- DEPARTMENT SEEDS -----
+
 INSERT INTO department (name)
 VALUE ("Sales");
 INSERT INTO department (name)
@@ -42,6 +47,7 @@ INSERT INTO department (name)
 VALUE ("Legal");
 
 -- EMPLOYEE ROLE SEEDS -------
+
 INSERT INTO role (title, salary, department_id)
 VALUE ("Lead Engineer", 150000, 2);
 INSERT INTO role (title, salary, department_id)
@@ -58,6 +64,7 @@ INSERT INTO role (title, salary, department_id)
 VALUE ("Lawyer", 190000, 4);
 
 -- EMPLOYEE SEEDS -------
+
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
 VALUE ("Jessica", "Haze", null, 1);
 INSERT INTO employee (first_name, last_name, manager_id, role_id)
@@ -74,7 +81,8 @@ INSERT INTO employee (first_name, last_name, manager_id, role_id)
 VALUE ("Tom", "Nice", 2, 7);
 
 -- SELECTING FOR CREATING 
---TABLES IN OUR SQL WORKBENCH 
+-- TABLES IN OUR SQL WORKBENCH 
+
 SELECT * FROM department;
 SELECT * FROM role;
 SELECT * FROM employee;
