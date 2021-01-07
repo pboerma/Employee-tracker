@@ -46,7 +46,8 @@ function startPrompt() {
           case "View All Employee's By Roles?":
               viewAllRoles();
             break;
-          case "View all Emplyees By Departments":
+
+          case "View all Employees By Departments":
               viewAllDepartments();
             break;
           
@@ -100,7 +101,7 @@ function viewAllDepartments() {
   })
 }
 
-// - Select Role Quieries Role Title for Add Employee Prompt - //
+// - Select Role Queries Role Title for Add Employee Prompt - //
 var roleArr = [];
 function selectRole() {
   connection.query("SELECT * FROM role", function(err, res) {
@@ -113,7 +114,7 @@ function selectRole() {
   return roleArr;
 }
 
-// - Select Role Quieries The Managers for Add Employee Prompt - //
+// - Select Role Queries The Managers for Add Employee Prompt - //
 var managersArr = [];
 function selectManager() {
   connection.query("SELECT first_name, last_name FROM employee WHERE manager_id IS NULL", function(err, res) {
