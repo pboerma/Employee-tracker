@@ -26,7 +26,7 @@ Using the terminal run
 
 node app.js
 
-![screenshot](Assets\Example.png)
+![screenshot](Assets/Example.png)
 
 ## Tools used
 
