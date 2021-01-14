@@ -41,4 +41,4 @@ Mysql
 
 ## Video showing functionality
 
-(insert Gdrive link)
+https://drive.google.com/file/d/1a507B87lER0d3dAD5T4fXAa934mtzOgp/view
